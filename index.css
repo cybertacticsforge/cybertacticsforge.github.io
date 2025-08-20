@@ -148,7 +148,7 @@ body {
     height:10vw;
     text-align:center;
     font-size:25px;
-    transform:rotate(-90deg);
+    transform:rotate(90deg);
     background:transparent;
     color:#fff;
     position:fixed;
