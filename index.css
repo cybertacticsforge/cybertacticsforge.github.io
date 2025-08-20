@@ -23,7 +23,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.75); /* 75% black */
+  background-color: rgba(0, 0, 0, 0.85); /* 85% black */
   z-index: -1; /* keep it under all content, just above slideshow */
 }
 
@@ -148,7 +148,7 @@ body {
     height:10vw;
     text-align:center;
     font-size:25px;
-    transform:rotate(90deg);
+    transform:rotate(-90deg);
     background:transparent;
     color:#fff;
     position:fixed;
@@ -166,7 +166,7 @@ body {
     height:10vw;
     text-align:center;
     font-size:25px;
-    transform:rotate(-90deg);
+    transform:rotate(90deg);
     background:transparent;
     color:#fff;
     position:fixed;
