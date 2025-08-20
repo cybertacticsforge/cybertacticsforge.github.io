@@ -1,57 +1,57 @@
-function showprojects(){
-    $("#projects_container").css("display","inherit");
-    $("#projects_container").addClass("animated slideInDown");
+function showwhatwedo(){
+    $("#whatwedo_container").css("display","inherit");
+    $("#whatwedo_container").addClass("animated slideInDown");
     setTimeout(function(){
-        $("#projects_container").removeClass("animated slideInDown");
+        $("#whatwedo_container").removeClass("animated slideInDown");
     },800);
 }
-function closeprojects(){
-    $("#projects_container").addClass("animated slideOutUp");
+function closewhatwedo(){
+    $("#whatwedo_container").addClass("animated slideOutUp");
     setTimeout(function(){
-        $("#projects_container").removeClass("animated slideOutUp");
-        $("#projects_container").css("display","none");
+        $("#whatwedo_container").removeClass("animated slideOutUp");
+        $("#whatwedo_container").css("display","none");
     },800);
 }
-function showabout(){
-    $("#about_container").css("display","inherit");
-    $("#about_container").addClass("animated slideInLeft");
+function showwhoweare(){
+    $("#whoweare_container").css("display","inherit");
+    $("#whoweare_container").addClass("animated slideInLeft");
     setTimeout(function(){
-        $("#about_container").removeClass("animated slideInLeft");
+        $("#whoweare_container").removeClass("animated slideInLeft");
     },800);
 }
-function closeabout(){
-    $("#about_container").addClass("animated slideOutLeft");
+function closewhoweare(){
+    $("#whoweare_container").addClass("animated slideOutLeft");
     setTimeout(function(){
-        $("#about_container").removeClass("animated slideOutLeft");
-        $("#about_container").css("display","none");
+        $("#whoweare_container").removeClass("animated slideOutLeft");
+        $("#whoweare_container").css("display","none");
     },800);
 }
-function showwork(){
-    $("#work_container").css("display","inherit");
-    $("#work_container").addClass("animated slideInRight");
+function showmissionvision(){
+    $("#missionvision_container").css("display","inherit");
+    $("#missionvision_container").addClass("animated slideInRight");
     setTimeout(function(){
-        $("#work_container").removeClass("animated slideInRight");
+        $("#missionvision_container").removeClass("animated slideInRight");
     },800);
 }
-function closework(){
-    $("#work_container").addClass("animated slideOutRight");
+function closemissionvision(){
+    $("#missionvision_container").addClass("animated slideOutRight");
     setTimeout(function(){
-        $("#work_container").removeClass("animated slideOutRight");
-        $("#work_container").css("display","none");
+        $("#missionvision_container").removeClass("animated slideOutRight");
+        $("#missionvision_container").css("display","none");
     },800);
 }
-function showcontact(){
-    $("#contact_container").css("display","inherit");
-    $("#contact_container").addClass("animated slideInUp");
+function showgetinvolved(){
+    $("#getinvolved_container").css("display","inherit");
+    $("#getinvolved_container").addClass("animated slideInUp");
     setTimeout(function(){
-        $("#contact_container").removeClass("animated slideInUp");
+        $("#getinvolved_container").removeClass("animated slideInUp");
     },800);
 }
-function closecontact(){
-    $("#contact_container").addClass("animated slideOutDown");
+function closegetinvolved(){
+    $("#getinvolved_container").addClass("animated slideOutDown");
     setTimeout(function(){
-        $("#contact_container").removeClass("animated slideOutDown");
-        $("#contact_container").css("display","none");
+        $("#getinvolved_container").removeClass("animated slideOutDown");
+        $("#getinvolved_container").css("display","none");
     },800);
 }
 setTimeout(function(){
@@ -60,9 +60,9 @@ setTimeout(function(){
       $("#loading").removeClass("animated fadeOut");
       $("#loading").css("display","none");
       $("#box").css("display","none");
-      $("#projects").removeClass("animated fadeIn");
-      $("#about").removeClass("animated fadeIn");
-      $("#contact").removeClass("animated fadeIn");
-      $("#work").removeClass("animated fadeIn");
+      $("#whatwedo").removeClass("animated fadeIn");
+      $("#whoweare").removeClass("animated fadeIn");
+      $("#getinvolved").removeClass("animated fadeIn");
+      $("#missionvision").removeClass("animated fadeIn");
     },1000);
 },1500);
