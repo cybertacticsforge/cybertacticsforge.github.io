@@ -312,20 +312,6 @@ body {
     cursor:pointer;
     padding:8px 60px;
 }
-#footer {
-    color:#fff;
-    width:92vw;
-    padding:5vh 4vw;
-    text-align:right;
-    position:fixed;
-    z-index:1;
-    bottom:0;
-    font-size:16px;
-    font-weight:bold;
-}
-#footer a {
-    color:rgb(255, 50, 50) ;
-}
 #particles-js {
     position:fixed;
     width:100vw;
@@ -362,20 +348,15 @@ body {
     #missionvision {
         display:none;
     }
-    #footer {
-        text-align:center;
-        padding-bottom: 2vh; 
-    }
     #middle {
         width:90vw;
         padding: 0 5vw;
         height: 100vh;
         justify-content: center;
     }
-    /* Scale heading and force it to wrap if needed */
+    /* Scale heading for mobile */
     #middle h1 {
-        font-size: 10vw;
-        word-break: break-all;
+        font-size: 11vw;
     }
     .container form input {
         width:90%;
@@ -400,4 +381,4 @@ body {
     #box div {
         width:100%;
     }
-}
+}```
