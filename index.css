@@ -360,13 +360,23 @@ body {
     }
     #footer {
         text-align:center;
+        /* Lower the footer slightly on mobile to avoid overlap */
+        padding-bottom: 2vh; 
     }
     #middle {
         width:90vw;
-        padding:0px 5vw;
+        padding: 0 5vw;
+        height: 100vh; /* Allow full height for better centering */
+        justify-content: center;
+    }
+    /* Scale down the main heading on mobile */
+    #middle h1 {
+        font-size: 12vw;
     }
     #middle table {
         width:80%;
+        /* Add margin to push GitHub icon up from footer */
+        margin: 4vh auto 8vh auto;
     }
     .container form input {
         width:90%;
@@ -376,6 +386,12 @@ body {
     }
     #menu {
         display:inline-block;
+    }
+    /* Add vertical spacing for mobile menu links */
+    #menu a {
+        display: block;
+        margin: 15px 0;
+        font-size: 22px;
     }
     #onlywide {
         display:none !important;
