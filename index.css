@@ -369,9 +369,10 @@ body {
         height: 100vh; /* Allow full height for better centering */
         justify-content: center;
     }
-    /* Scale down the main heading on mobile */
+    /* Scale down the main heading on mobile and allow it to break */
     #middle h1 {
-        font-size: 12vw;
+        font-size: 10vw;
+        overflow-wrap: break-word;
     }
     #middle table {
         width:80%;
