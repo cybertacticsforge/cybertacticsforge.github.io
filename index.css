@@ -204,13 +204,6 @@ body {
     cursor:pointer;
 }
 
-#middle table {
-    width:30%;
-    margin:6vh auto;
-}
-#middle table tr td {
-    text-align:center;
-}
 .social {
     color:#fff;
     font-size:22px;
@@ -234,6 +227,17 @@ body {
     max-height:100vh;
     overflow-y:auto;
     display:none;
+}
+/* Style for .social link when it is inside a container */
+.container .social {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: 0.4s ease-in-out;
+}
+.container .social:hover {
+    color: #000; /* Change to black on hover for visibility */
+    cursor: pointer;
 }
 .container div {
     font-size:25px;
@@ -360,24 +364,18 @@ body {
     }
     #footer {
         text-align:center;
-        /* Lower the footer slightly on mobile to avoid overlap */
         padding-bottom: 2vh; 
     }
     #middle {
         width:90vw;
         padding: 0 5vw;
-        height: 100vh; /* Allow full height for better centering */
+        height: 100vh;
         justify-content: center;
     }
-    /* Scale down the main heading on mobile and allow it to break */
+    /* Scale heading and force it to wrap if needed */
     #middle h1 {
         font-size: 10vw;
-        overflow-wrap: break-word;
-    }
-    #middle table {
-        width:80%;
-        /* Add margin to push GitHub icon up from footer */
-        margin: 4vh auto 8vh auto;
+        word-break: break-all;
     }
     .container form input {
         width:90%;
@@ -388,7 +386,6 @@ body {
     #menu {
         display:inline-block;
     }
-    /* Add vertical spacing for mobile menu links */
     #menu a {
         display: block;
         margin: 15px 0;
