@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TRETC Challenge Setup Instructions</title>
+  <style>
+    :root{
+      --bg:#0b0f0c;          /* near-black */
+      --text:#9bd49b;        /* muted green */
+      --muted:#6fbf6f;       /* slightly brighter green */
+      --panel:#0f1511;       /* subtle panel */
+      --code-bg:#111418;     /* "Kali terminal" dark */
+      --code-text:#c9cdd2;   /* terminal gray */
+      --border:#1a2a1f;
+      --link:#a7e5a7;
+    }
+
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      line-height:1.5;
+    }
+
+    .wrap{
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 28px 18px 50px;
+    }
+
+    header{
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      border-radius: 8px;
+    }
+
+    h1{
+      margin:0 0 6px 0;
+      font-size: 20px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .sub{
+      margin:0;
+      font-size: 13px;
+      color: var(--text);
+      opacity: 0.9;
+    }
+
+    h2{
+      margin: 22px 0 8px;
+      font-size: 16px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    a{ color: var(--link); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    ol{
+      margin: 10px 0 0 22px;
+      padding: 0;
+    }
+    li{
+      margin: 8px 0;
+    }
+
+    .note{
+      margin: 10px 0 0;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    .ip{
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    pre{
+      margin: 10px 0;
+      padding: 12px 14px;
+      background: var(--code-bg);
+      border: 1px solid #222a33;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    code{
+      color: var(--code-text);
+      font-size: 13px;
+    }
+
+    .divider{
+      height:1px;
+      background: var(--border);
+      margin: 18px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>TRETC Challenge Setup Instructions</h1>
+      <p class="sub">Follow these steps on <strong>apps.cyber.org</strong> to set up the challenge and launch WATCHTOWER-7.</p>
+    </header>
+
+    <h2>Part A — Ubuntu VM (Target)</h2>
+    <ol>
+      <li>Login to <strong>apps.cyber.org</strong>.</li>
+      <li>Go to the <strong>Ubuntu Virtual Machine</strong>.</li>
+      <li>On the desktop, <strong>left-click</strong> and select <strong>“Open in Terminal”</strong>.</li>
+      <li>
+        Write down the IP address after the <code>@</code> symbol.
+        Example: <span class="ip">10.15.81.150</span>
+      </li>
+
+      <li><strong>Option 1 (type it):</strong> enter the command below.</li>
+      <pre><code>wget https://github.com/jboyce1/ppsCTF/raw/main/challenges/TRETC/target.tar.gz</code></pre>
+
+      <li>
+        <strong>Option 2 (shared clipboard):</strong>
+        <ol>
+          <li>Press <strong>Ctrl + Alt + Shift</strong> to open the shared clipboard.</li>
+          <li>Paste the command into the white box.</li>
+          <li>Press <strong>Ctrl + Alt + Shift</strong> again to close the shared clipboard.</li>
+          <li>Left-click inside the terminal window and select <strong>Paste</strong>.</li>
+        </ol>
+      </li>
+
+      <li>Press <strong>Enter</strong>. You should see <code>target.tar.gz</code> appear on the desktop.</li>
+      <li>Double click <code>target.tar.gz</code> on the desktop.</li>
+      <li>
+        Left-click the folder called <strong>target</strong> and select <strong>“Extract…”</strong><br/>
+        Then click the <strong>Extract</strong> button in the top right of the window &rarr; <strong>Show Files</strong>
+      </li>
+      <li>Open the extracted <strong>target</strong> folder.</li>
+      <li>Left-click in the window where <code>deploy_target.py</code> is located and choose <strong>“Open in Terminal”</strong>.</li>
+      <li>Type the following:</li>
+      <pre><code>sudo python3 deploy_target.py</code></pre>
+      <li>In about a minute it should print: <strong>“target complete”</strong></li>
+    </ol>
+
+    <div class="divider"></div>
+
+    <h2>Part B — Kali VM (Attacker)</h2>
+    <ol>
+      <li>Switch to the other machines.</li>
+      <li>Select your <strong>Kali Linux VM</strong> (attacker machine).</li>
+      <li>Left-click on the desktop and select <strong>Open Terminal Here</strong>.</li>
+      <li>Type or copy/paste the following into the terminal:</li>
+      <pre><code>wget https://github.com/jboyce1/ppsCTF/raw/main/challenges/TRETC/WATCHTOWER-7.html</code></pre>
+      <li>Press <strong>Enter</strong>. <code>WATCHTOWER-7.html</code> should appear on your desktop.</li>
+      <li>Double click it and start your adventure.</li>
+    </ol>
+
+    <p class="note">
+      Tip: If a command doesn’t paste, click inside the terminal window once, then try pasting again.
+    </p>
+  </div>
+</body>
+</html>
