@@ -41,7 +41,7 @@
     </div>
     <a id="whoweare" onclick="showwhoweare()" class="animated fadeIn" style="animation-delay: 1000ms;">who we are</a>
     <a id="missionvision" onclick="showmissionvision()" class="animated fadeIn" style="animation-delay: 1000ms;">mission & vision</a>
-    <a id="getinvolved" onclick="showgetinvolved()" class="animated fadeIn" style="animation-delay: 1000ms;">get involved</a>
+    <a id="getinvolved" onclick="showgetinvolved()" class="animated fadeIn" style="animation-delay: 1000ms;">get involved or support</a>
     <a id="whatwedo" onclick="showwhatwedo()" class="animated fadeIn" style="animation-delay: 1000ms;">what we do</a>
     <div id="middle" class="animated slideInDown" style="animation-delay: 2000ms;">
         <h1>Cyber<wbr>Tactics<wbr>Forge</h1>
@@ -51,7 +51,7 @@
         <div id="menu">
             <a onclick="showwhoweare()">who we are</a>
             <a onclick="showmissionvision()">mission & vision</a>
-            <a onclick="showgetinvolved()">get involved</a>
+            <a onclick="showgetinvolved()">get involved or support</a>
             <a onclick="showwhatwedo()">what we do</a>
         </div>
     </div>
@@ -114,7 +114,7 @@
             <h2>executive director:</h2> 
             <h3>jacob boyce</h3>
             <p>
-                A veteran teacher of Pittsburgh Public Schools and an Intelligence Analyst and Cyber Operations Specialist
+                A veteran teacher of Pittsburgh Public Schools and an Intelligence Analyst/Cyber Operations Specialist
                with the U.S. Army Reserve. Mr. Boyce found a unmet need in cybersecurity among secondary students in the 
                 Pittsburgh area. He started teaching a course on offensive/defensive cyber operations that turned into a
                 competition aimed at secondary students called pps{CyberTacticsFest}, due to the growth of this competition
@@ -152,7 +152,18 @@
     </div>
     <div id="getinvolved_container" class="container">
         <div onclick="closegetinvolved()"><i class="fas fa-angle-down"></i></div>
-        <h1>get involved.</h1>
+        <h1>get involved or support.</h1>
+        <section>
+            <h2 style="color: #000; text-transform: lowercase;">make a one time donation</h2>
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            <stripe-buy-button
+                buy-button-id="buy_btn_1U9PtpQ2600ZvwQH3srs528J"
+                publishable-key="pk_live_51U8i5nQ2600ZvwQHIeGGUrz555glWVlXEQSrItdHEFHLTroZOISfolgCZCeGVecB3VouYpHSKBskBexgDCHLM0vr006o7341Os">
+            </stripe-buy-button>
+            <p style="color: #fff; margin-top: 12px;">
+                Your contribution is tax-deductible to the extent allowed by law.
+            </p>
+        </section>
         <section>
             <h2>volunteer with us</h2>
             <p>
