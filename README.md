@@ -67,3 +67,8 @@ Checked locally in Chromium on September 10, 2026:
 - Desktop and mobile screenshots reviewed.
 
 The embedded Stripe form was replaced with its existing hosted checkout URL after the embed produced contrast and form-label issues. Payment submission was not tested.
+
+
+## Programs page
+
+`programs/index.html` is the standalone ForgeOps program hub at `/programs/`, with the two tracks, four programs, VCR explanation, and expandable schedules. Edit its content directly; its isolated stylesheet is `programs/programs.css`. The foundation homepage links to it in the main navigation and retains the flagship ppsCTF feature. Technical classes remain at `https://jboyce1.github.io/ppsCTF/`.

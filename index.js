@@ -16,7 +16,7 @@ if (menuButton && navigation) {
     const link = event.target.closest("a");
     if (!link) return;
     setMenu(false);
-    if (window.matchMedia("(max-width: 780px)").matches) {
+    if (link.hash && link.pathname === window.location.pathname && window.matchMedia("(max-width: 780px)").matches) {
       const target = document.querySelector(link.hash);
       if (target) {
         target.setAttribute("tabindex", "-1");
