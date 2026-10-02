@@ -39,7 +39,6 @@
     <main id="main">
       <section class="hero wrap" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">YEAR ONE RANGE BUILD</p>
           <h1 id="hero-title">Put your retired infrastructure back to work.</h1>
           <p class="lead">
             We need one additional enterprise server, compatible ECC memory,
@@ -81,7 +80,7 @@
         <div class="wrap scope-grid">
           <div><strong>2</strong><span>concurrent enterprise enclaves</span></div>
           <div><strong>10–15</strong><span>virtual machines per enclave</span></div>
-          <div><strong>4–8 TB</strong><span>usable active SSD storage</span></div>
+          <div><strong>4+ TB</strong><span>usable active SSD storage</span></div>
           <div><strong>10 TB+</strong><span>usable evidence storage</span></div>
         </div>
       </section>
@@ -100,7 +99,7 @@
 
         <div class="need-grid">
           <article class="need-card priority-one">
-            <div class="need-topline"><span>01 / HIGHEST PRIORITY</span><span>COMPUTE</span></div>
+            <div class="need-topline"><span>HIGHEST PRIORITY</span><span>COMPUTE</span></div>
             <h3>Enterprise virtualization server</h3>
             <p>
               One additional dual-socket x86-64 server will complete the first
@@ -115,21 +114,21 @@
           </article>
 
           <article class="need-card priority-one">
-            <div class="need-topline"><span>02 / HIGHEST PRIORITY</span><span>MEMORY</span></div>
+            <div class="need-topline"><span>HIGHEST PRIORITY</span><span>MEMORY</span></div>
             <h3>Compatible DDR4 ECC memory</h3>
             <p>
               Memory determines how many Windows and Linux guests can operate
               together. Our target is approximately 512 GB per compute host.
             </p>
             <dl>
-              <div><dt>Useful sizes</dt><dd>32 GB and 64 GB modules</dd></div>
+              <div><dt>Useful sizes</dt><dd>16 GB, 32 GB, and 64 GB modules</dd></div>
               <div><dt>Type</dt><dd>Server-compatible RDIMMs or LRDIMMs</dd></div>
               <div><dt>Before acceptance</dt><dd>We will verify model, rank, speed, population rules, and host compatibility</dd></div>
             </dl>
           </article>
 
           <article class="need-card priority-one">
-            <div class="need-topline"><span>03 / HIGHEST PRIORITY</span><span>STORAGE</span></div>
+            <div class="need-topline"><span>HIGHEST PRIORITY</span><span>STORAGE</span></div>
             <h3>Enterprise SSDs</h3>
             <p>
               Fast storage lets us clone, boot, reset, and redeploy entire
@@ -137,14 +136,14 @@
               storage bottleneck.
             </p>
             <dl>
-              <div><dt>Target</dt><dd>4–8 TB usable capacity across the compute cluster</dd></div>
+              <div><dt>Target</dt><dd>4+ TB usable capacity across the compute cluster</dd></div>
               <div><dt>Useful drives</dt><dd>1.92 TB, 3.84 TB, or similar enterprise SSDs</dd></div>
               <div><dt>Before acceptance</dt><dd>We will verify interface, caddy, controller, endurance, health, firmware, and sector format</dd></div>
             </dl>
           </article>
 
           <article class="need-card">
-            <div class="need-topline"><span>04 / NEXT PRIORITY</span><span>TELEMETRY</span></div>
+            <div class="need-topline"><span>NEXT PRIORITY</span><span>TELEMETRY</span></div>
             <h3>Logging and evidence server</h3>
             <p>
               A separate telemetry system preserves student-environment
@@ -153,13 +152,13 @@
             </p>
             <dl>
               <div><dt>Compute</dt><dd>16–24+ physical cores; 64–128 GB RAM</dd></div>
-              <div><dt>Active data</dt><dd>2–4 TB usable SSD for current logs and analysis</dd></div>
+              <div><dt>Active data</dt><dd>4+ TB usable SSD for current logs and analysis</dd></div>
               <div><dt>Archive</dt><dd>10 TB+ usable bulk storage for selected retained evidence</dd></div>
             </dl>
           </article>
 
           <article class="need-card">
-            <div class="need-topline"><span>05 / USEFUL UPGRADE</span><span>NETWORK</span></div>
+            <div class="need-topline"><span>USEFUL UPGRADE</span><span>NETWORK</span></div>
             <h3>10 GbE server fabric</h3>
             <p>
               Existing 1 GbE networking can support the pilot. A small 10 GbE
@@ -191,25 +190,25 @@
 
           <div class="stack" aria-label="Cyber range technology stack">
             <article>
-              <span>04 / STUDENT ENVIRONMENTS</span>
+              <span>STUDENT ENVIRONMENTS</span>
               <h3>Two small enterprises</h3>
               <p>Workstations, identity, DNS, email, web, file services, firewalls, segmented networks, and monitoring agents.</p>
               <b>Uses compute · RAM · active SSD</b>
             </article>
             <article>
-              <span>03 / RANGE SERVICES</span>
+              <span>RANGE SERVICES</span>
               <h3>Deployment, access, scenarios, and scoring</h3>
               <p>Crucible components coordinate infrastructure-as-code deployment, participant access, scenario actions, and event operation.</p>
               <b>Uses compute · RAM · active SSD</b>
             </article>
             <article>
-              <span>02 / VIRTUALIZATION &amp; NETWORK</span>
+              <span>VIRTUALIZATION &amp; NETWORK</span>
               <h3>Proxmox VE and isolated virtual networks</h3>
               <p>Two hosts run the virtual machines. VLAN-aware switching and virtual firewalls keep management, team, and evidence systems separated.</p>
               <b>Uses servers · SSD · 10 GbE</b>
             </article>
             <article>
-              <span>01 / EVIDENCE PLANE</span>
+              <span>EVIDENCE PLANE</span>
               <h3>Telemetry, search, and retention</h3>
               <p>Logs, service checks, endpoint and network events, scoring evidence, and selected packet captures support review and verified competency records.</p>
               <b>Uses telemetry compute · SSD · bulk storage</b>
